@@ -1,0 +1,8 @@
+{
+    "get": "fetch",
+    "want": "fetch",
+    "give": "fetch",
+    "fetch": "fetch",
+    "buy": "buy",
+    "sell": "sell"
+}

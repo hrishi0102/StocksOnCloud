@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-k8s
+spec:
+  replicas: 2 # Number of desired pods
+  selector:
+    matchLabels:
+      app: backend-app
+  template:
+    metadata:
+      labels:
+        app: backend-app
+    spec:
+      containers:
+      - name: backend-app
+        image: dhananjaypai08/backend-app:latest # Replace with your image name
+        ports:
+        - containerPort: 5000
